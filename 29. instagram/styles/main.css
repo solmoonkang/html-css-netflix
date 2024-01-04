@@ -85,3 +85,66 @@
         margin: unset;
     }
 }
+
+/* Story */
+.story {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.story__avatar {
+    position: relative;
+}
+
+.story__border {
+    width: 64px;
+    height: 64px;
+    fill: none;
+    stroke: #C7C7C7;
+    stroke-width: 1.5;
+}
+
+.story__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.story__user {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+    text-transform: lowercase;
+    max-width: 72px;
+    /* 문장의 길이가 길 때, ... 형식으로 나타낸다 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* 요소가 공백 문자를 처리하는 방법 */
+    white-space: nowrap;
+}
+
+.stories__content {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    pad: 0 16px;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+/* 스토리 사용자가 많아질 경우 스크롤 바가 생기는데, 이를 없애주기 위해 구현 */
+.stories__content::-webkit-scrollbar {
+    display: none;
+}
