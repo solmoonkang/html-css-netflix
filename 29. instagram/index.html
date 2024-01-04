@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="styles/side.css">
 </head>
 <body>
+    <!-- Header 생성하기 -->
     <header class="header">
         <nav class="header__content">
             <div class="header__buttons">
@@ -35,13 +36,30 @@
                 <a href="#">
                     <img src="assets/icons/messenger.svg" alt="messenger">
                 </a>
-                
+
                 <div class="profile__picture">
                     <img src="assets/images/avatar.png" alt="user picture">
                 </div>
-
             </div>
         </nav>
     </header>
+
+    <!-- Main-Container 구조 잡기 -->
+    <main class="main-container"> main-container
+        <!-- Main 안에 Section 나누기 -->
+        <section class="content-container"> content-container
+
+            <!-- Div 안에 Content Div인 Story와 Posts 배치하기 -->
+            <div class="content"> content
+                <div class="stories">stories</div>
+                <div class="posts">posts</div>
+            </div>
+
+            <!-- Div 안에 Side-Menu인 Footer 배치하기 -->
+            <div class="side-menu"> side-menu
+                <div class="side-menu__footer">side-menu__footer</div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
