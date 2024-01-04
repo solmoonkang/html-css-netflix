@@ -26,3 +26,15 @@ img {
     --text-dark: #262626;
     --text-light: #999999
 }
+
+/* darkTheme을 위한 CSS 변수 생성 */
+:root.darkTheme {
+    --primary: #000000;
+    --secondary: #050505;
+    --border: #262626;
+
+    --story-border: #707070;
+
+    --text-dark: #FAFAFA;
+    --text-light: #999999;
+}
