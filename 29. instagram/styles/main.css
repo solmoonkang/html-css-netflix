@@ -263,9 +263,6 @@
     text-transform: uppercase;
 }
 
-
-
-
 @media (min-width: 620px) {
     .content-container {
         padding: 30px 0 24px

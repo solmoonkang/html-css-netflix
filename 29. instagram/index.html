@@ -146,8 +146,91 @@
             </div>
 
             <!-- Div 안에 Side-Menu인 Footer 배치하기 -->
-            <div class="side-menu"> side-menu
-                <div class="side-menu__footer">side-menu__footer</div>
+            <div class="side-menu">
+
+                <!-- User Profile 구현하기 -->
+                <div class="side-menu__user-profile">
+                    <a href="#" class="side-menu__user-avatar">
+                        <img src="assets/images/avatar.png" alt="user picture"/>
+                    </a>
+
+                    <div class="side-menu__user-info">
+                        <a href="#">user1</a>
+                        <span>nickname</span>
+                    </div>
+
+                    <button class="side-menu__user-button">
+                        Switch
+                    </button>
+                </div>
+
+                <!-- Suggestions 구현하기 -->
+                <div class="side-menu__suggestions-section">
+
+                    <!-- Suggestions Header 구현하기 -->
+                    <div class="side-menu__suggestions-header">
+                        <h2>Suggestions for you</h2>
+                        <button>See All</button>
+                    </div>
+
+                    <!-- Suggestions Content 구현하기 -->
+                    <div class="side-menu__suggestions-content">
+
+                        <div class="side-menu__suggestion">
+                            <a href="#" class="side-menu__suggestion-avatar">
+                                <img src="assets/images/avatar.png" alt="user picture"/>
+                            </a>
+                            <div class="side-menu__suggestion-info">
+                                <a href="#">
+                                    user11
+                                </a>
+                                <span>Followed by user2, user3 and others</span>
+                            </div>
+                            <button class="side-menu__suggestion-button">Follow</button>
+                        </div>
+
+                        <div class="side-menu__suggestion">
+                            <a href="#" class="side-menu__suggestion-avatar">
+                                <img src="assets/images/avatar.png" alt="user picture"/>
+                            </a>
+                            <div class="side-menu__suggestion-info">
+                                <a href="#">
+                                    user11
+                                </a>
+                                <span>Followed by user2, user3 and others</span>
+                            </div>
+                            <button class="side-menu__suggestion-button">Follow</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Footer 구현하기 -->
+                <div class="side-menu__footer">
+                    <div class="side-menu__footer-links">
+                        <ul class="side-menu__footer_list">
+
+                            <li class="side-menu__footer-item">
+                                <a class="side-menu__footer-link">About</a>
+                            </li>
+
+                            <li class="side-menu__footer-item">
+                                <a class="side-menu__footer-link">Help</a>
+                            </li>
+
+                            <li class="side-menu__footer-item">
+                                <a class="side-menu__footer-link">Press</a>
+                            </li>
+
+                            <li class="side-menu__footer-item">
+                                <a class="side-menu__footer-link">API</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <span class="side-menu__footer-copyright">&copy; 2023 Instagram from facebook</span>
+                </div>
             </div>
         </section>
     </main>
