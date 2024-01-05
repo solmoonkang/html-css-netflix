@@ -53,17 +53,17 @@ body {
 
 .play-button img, 
 .detail-button img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     background-color: var(--content-text);
     vertical-align: middle;
 }
 
 .play-button:hover, 
 .detail-button:hover,
-.play-button img:hover, 
-.detail-button img:hover {
-    background-color: lightgray;
+.play-button:hover img, 
+.detail-button:hover img {
+    background-color: var(--button);
 }
 
 /* Movies */
@@ -109,4 +109,5 @@ body {
     --primary: #262626;
     --content-text: #FFFFFF;
     --logo-text: #FF0000;
+    --button: #D3D3D3;
 }
