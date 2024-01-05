@@ -1,0 +1,87 @@
+.header {
+    height: 20px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    background-color: #212121FF;
+    padding: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #4D4D4D;
+}
+
+/* Left Section */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section h1 {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 2rem;
+    color: red;
+    font-family: 'Bebas Neue';
+}
+
+/* Middle Section */
+.middle-section {
+    flex-grow: 1;
+    margin-left: 40px;
+    margin-right: 35px;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.category ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.category a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.category a:hover {
+    color: #4D4D4D;
+}
+
+/* Right Section */
+.right-section {
+    width: 180px;
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-icon {
+    height: 24px;
+}
+
+.notification-icon {
+    height: 24px;
+}
+
+.profile-icon {
+    height: 32px;
+    border-radius: 4px;
+}
+
+.profile-icon:hover {
+    border: 1px solid white;
+}
