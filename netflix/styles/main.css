@@ -65,3 +65,42 @@ body {
 .detail-button img:hover {
     background-color: lightgray;
 }
+
+/* Movies */
+.movies {
+    color: white;
+    margin-left: 0;
+}
+
+.movies h3 {
+    color: white;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.recent-movies,
+.popular-movies {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.recent-movie,
+.popular-movie {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    margin-right: 5px;
+    transition: transform 450ms;
+}
+
+.recent-movie:hover,
+.popular-movie:hover {
+    transform: scale(1.2);
+}
+
+.recent-movies::-webkit-scrollbar,
+.popular-movies::-webkit-scrollbar {
+    display: none;
+}
