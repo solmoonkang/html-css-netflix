@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX Clone</title>
+
+    <!-- CSS 파일 정의 -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/movies.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h1>NETFLIX</h1>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="middle-section">
+            <nav class="category">
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">시리즈</a></li>
+                    <li><a href="#">영화</a></li>
+                    <li><a href="#">NEW!요즘 대세 콘텐츠</a></li>
+                    <li><a href="#">내가 찜한 리스트</a></li>
+                    <li><a href="#">언어별로 찾아보기</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <img class="search-icon" src="assets/netflix-icons/search.svg"/>
+            <img class="notification-icon" src="assets/netflix-icons/notifications.svg"/>
+            <img class="profile-icon" src="assets/netflix-icons/profile.jpg"/>
+        </div>
+    </header>
+
+    <main>
+        <!-- MAIN MOVIES -->
+        <div class="main-section">
+            <div class="main-section-content">
+                <h1 class="main-section-title">사냥개들</h1>
+                <p class="main-section-description">
+                    두 청년 복서가 선한 대부업자와 한뜻으로 뭉친다. 돈 때문에 절박한
+                    <br>
+                    약자들을 먹잇감 삼는 악랄한 사채업자에 대적하기 위해.
+                </p>
+                <button class="play-button">
+                    <img src="assets/netflix-icons/play.jpeg" alt="play"> 재생
+                </button>
+                <button class="detail-button">
+                    <img src="assets/netflix-icons/detail.jpeg" alt="detail"> 상세 정보
+                </button>
+            </div>
+        </div>
+
+        <!-- RECENTLY MOVIES -->
+        <div class="movies">
+            <h3>지금 뜨는 콘텐츠</h3>
+            <div class="recent-movies">
+                <img class="recent-movie poster" src="assets/netflix-images/joker.jpeg"/>
+                <img class="recent-movie poster" src="assets/netflix-images/utopia.jpeg"/>
+                <img class="recent-movie poster" src="assets/netflix-images/tokyo.jpeg"/>
+                <img class="recent-movie poster" src="assets/netflix-images/battle.jpeg"/>
+                <img class="recent-movie poster" src="assets/netflix-images/vip.jpeg"/>
+                <img class="recent-movie poster" src="assets/netflix-images/rotate.jpeg"/>
+                <img class="recent-movie poster" src="assets/netflix-images/giant.jpeg"/>
+            </div>
+        </div>
+
+        <!-- KOREA POPULAR MOVIES -->
+        <div class="movies">
+            <h3>평단의 찬사를 받은 한국 드라마</h3>
+            <div class="popular-movies">
+                <img class="popular-movie poster" src="assets/netflix-images/mister.jpeg"/>
+                <img class="popular-movie poster" src="assets/netflix-images/reply1988.jpeg"/>
+                <img class="popular-movie poster" src="assets/netflix-images/mr.sunshine.jpeg"/>
+                <img class="popular-movie poster" src="assets/netflix-images/life.jpeg"/>
+                <img class="popular-movie poster" src="assets/netflix-images/doctor.jpeg"/>
+                <img class="popular-movie poster" src="assets/netflix-images/vincenzo.jpeg"/>
+                <img class="popular-movie poster" src="assets/netflix-images/rich.jpeg"/>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
