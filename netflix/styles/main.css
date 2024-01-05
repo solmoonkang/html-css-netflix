@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', 'sans-serif';
+    background-color: black;
+}
+
+.main-section {
+    background-image: url("../assets/netflix-images/hunt.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: black;
+    height: 650px;
+}
+
+.main-section-content {
+    margin-left: 50px;
+    padding-top: 190px;
+    height: 190px;
+
+    position: absolute;
+    bottom: 0;
+    margin-left: 40px;
+}
+
+.main-section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    color: white;
+}
+
+.main-section-description {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+.play-button,
+.detail-button {
+    width: 120px;
+    height: 47px;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.play-button img, 
+.detail-button img {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.play-button:hover, 
+.detail-button:hover,
+.play-button img:hover, 
+.detail-button img:hover {
+    background-color: lightgray;
+}
