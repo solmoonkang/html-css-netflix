@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Arial', 'sans-serif';
-    background-color: black;
+    background-color: var(--primary);
 }
 
 .main-section {
@@ -13,7 +13,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    color: black;
+    color: var(--primary);
     height: 650px;
 }
 
@@ -31,21 +31,21 @@ body {
     font-size: 3rem;
     font-weight: 800;
     padding-bottom: 0.3rem;
-    color: white;
+    color: var(--content-text);
 }
 
 .main-section-description {
     margin-bottom: 10px;
     font-size: 1rem;
-    color: white;
+    color: var(--content-text);
 }
 
 .play-button,
 .detail-button {
     width: 120px;
     height: 47px;
-    background-color: white;
-    color: black;
+    background-color: var(--content-text);
+    color: var(--primary);
     font-size: medium;
     border-radius: 5px;
     overflow: hidden;
@@ -55,7 +55,7 @@ body {
 .detail-button img {
     height: 30px;
     width: 30px;
-    background-color: white;
+    background-color: var(--content-text);
     vertical-align: middle;
 }
 
@@ -68,12 +68,12 @@ body {
 
 /* Movies */
 .movies {
-    color: white;
+    color: var(--content-text);
     margin-left: 0;
 }
 
 .movies h3 {
-    color: white;
+    color: var(--content-text);
     margin-left: 15px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -103,4 +103,10 @@ body {
 .recent-movies::-webkit-scrollbar,
 .popular-movies::-webkit-scrollbar {
     display: none;
+}
+
+:root {
+    --primary: #262626;
+    --content-text: #FFFFFF;
+    --logo-text: #FF0000;
 }
