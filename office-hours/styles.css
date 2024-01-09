@@ -1,0 +1,157 @@
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+
+body {
+    background-color: #111;
+}
+
+
+/* header */
+
+/* header - bar */
+
+.navbar {
+    /* 가장 위에 fixed 한다. */
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #111;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    /* 리스트의 점들을 없애준다. */
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar li a {
+    padding: 2px 2px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar li a:hover {
+    color: gray;
+}
+
+/* header - logo */
+
+.logo {
+    height: 45px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    /* 해당 부모 요소의 사이즈를 받아서 구현한다. */
+    width: 100%;
+}
+
+/* main - banner */
+
+.banner {
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 448px;
+    color: white;
+}
+
+.banner_contents {
+    margin-left: 30px;
+    padding-top: 190px;
+    height: 190px;
+}
+
+.banner_title {
+    font-size: 3rem;
+    /* font 굵기를 설정한다. */
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner_button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.banner_button button {
+    width: 60px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+.banner_button button:hover {
+    background-color: rgb(171, 163, 163);
+    cursor: pointer;
+}
+
+.banner_description {
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* em과 rem의 차이 */
+/* em은 상위 요소의 값을 따른다. 때문에 많은 기준들이 생길 수 있다.
+rem은 body에서 정한 값을 기준으로 body에서 14px로 font-size를 설정했다면, 1rem은 14px, 2rem은 28px이 된다. */
+
+
+/* main - row */
+
+.row {
+    color: white;
+}
+
+.row h2 {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row_poster:hover {
+    transform: scale(1.1);
+}
+
+.row_poster::-webkit-scrollbar {
+    display: none;
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
